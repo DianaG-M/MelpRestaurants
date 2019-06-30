@@ -1,0 +1,31 @@
+nav a {
+    font-size: 3.5em;
+    color: white;
+}
+
+li a {
+    font-size: 2em;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 10% 20% 50% 10%;
+    ;
+}
+
+#melp {
+    grid-column: 2/3;
+    text-decoration: none;
+}
+
+ul {
+    grid-column: 3/4;
+}
+
+.dropdown-menu {
+    background-color: rgba(141, 3, 21, 0.521);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(192, 19, 42);
+}

@@ -1,0 +1,21 @@
+ol a {
+    text-decoration: none;
+    color: black;
+}
+
+#cards-restaurants {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% auto;
+    height: 88.3vh;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.card {
+    max-width: 480px;
+}
+
+.container-fluid {
+    padding-right: 22px;
+    padding-left: 22px;
+}

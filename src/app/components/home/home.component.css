@@ -1,0 +1,27 @@
+main h1 {
+    font-size: 6em;
+    color: white;
+}
+
+main p {
+    font-size: 2.5em;
+    color: white;
+}
+
+#welcome {
+    display: grid;
+    grid-template-columns: 15% 50% 30% 5%;
+    grid-template-rows: 20% 20% 20% 20% 10%;
+    height: 88.4vh;
+    background-color: rgba(141, 3, 21, 0.521);
+}
+
+#title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#description {
+    grid-column: 2;
+    grid-row: 3;
+}

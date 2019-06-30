@@ -1,0 +1,31 @@
+<main id="all-restaurants">
+    <main id="cards-restaurants" class="container-fluid">
+        <div class="card mt-3" *ngFor="let restaurant of dataRestaurants">
+            <div class="card-header bg-transparent">
+                <h3>{{ restaurant.name }}</h3>
+            </div>
+            <br>
+            <div class="row no-gutters">
+                <div class="col-lg-4">
+                    <img src="../../../assets/img/restaurant.png" class="card-img m-auto" alt="...">
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ restaurant.address.state }}</h4>
+                        <h5 class="card-text">Address: {{ restaurant.address.street }}, {{ restaurant.address.city }}
+                        </h5>
+                        <h5 class="card-text"></h5>
+                    </div>
+                </div>
+            </div><br>
+            <div class="card-footer bg-transparent">
+                <h4>Contact:</h4>
+                <ul>
+                    <ol><i class="fas fa-envelope"> {{ restaurant.contact.email }}</i> </ol>
+                    <ol><i class="fas fa-phone"> {{ restaurant.contact.phone }}</i></ol>
+                    <ol><a [href]=restaurant.contact.site target="_blank"><i class="fas fa-at"> {{ restaurant.contact.site }} </i></a></ol>
+                </ul>
+            </div>
+        </div>
+    </main>
+</main>
