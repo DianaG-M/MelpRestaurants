@@ -12,8 +12,9 @@ main p {
     display: grid;
     grid-template-columns: 15% 50% 30% 5%;
     grid-template-rows: 20% 20% 20% 20% 10%;
-    height: 88.4vh;
+    height: 88.3vh;
     background-color: rgba(141, 3, 21, 0.521);
+    top: 0;
 }
 
 #title {

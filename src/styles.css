@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    height: 84.5vh;
+    background-size: 100vh;
     background-image: url('./assets/img/portada.jpg');
     background-size: cover;
     background-repeat: no-repeat;
