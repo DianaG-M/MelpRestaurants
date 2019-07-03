@@ -12,8 +12,10 @@ import { NavComponent } from './components/shared/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
 import { AscNameComponent } from './components/asc-name/asc-name.component';
-import { PipePipe } from './pipe/pipe.pipe';
+import { NamePipe } from './pipe/name.pipe';
 import { MenuComponent } from './components/menu/menu.component';
+import { RatingComponent } from './components/rating/rating.component';
+import { RatingPipe } from './pipe/rating.pipe';
 
 
 
@@ -24,8 +26,10 @@ import { MenuComponent } from './components/menu/menu.component';
     HomeComponent,
     RestaurantsComponent,
     AscNameComponent,
-    PipePipe,
-    MenuComponent
+    NamePipe,
+    MenuComponent,
+    RatingComponent,
+    RatingPipe
   ],
   imports: [
     BrowserModule,
