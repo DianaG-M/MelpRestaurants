@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { RestaurantService } from '../../services/restaurant.service';
 
+
 @Component({
-  selector: 'app-asc-name',
-  templateUrl: './asc-name.component.html',
-  styleUrls: ['./asc-name.component.css']
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css']
 })
-export class AscNameComponent implements OnInit {
-OrderRestaurants: any = [];
+export class MenuComponent implements OnInit {
+restaurantOne: any = [];
   constructor(public restaurant: RestaurantService) {
     this.restaurant.getData()
       .subscribe( data => {
         // console.log(data);
-        this.OrderRestaurants = data;
+        this.restaurantOne = data;
       });
   }
 
