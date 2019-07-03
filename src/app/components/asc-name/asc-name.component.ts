@@ -7,12 +7,12 @@ import { RestaurantService } from '../../services/restaurant.service';
   styleUrls: ['./asc-name.component.css']
 })
 export class AscNameComponent implements OnInit {
-OrderRestaurants: any = [];
+orderByName: any = [];
   constructor(public restaurant: RestaurantService) {
     this.restaurant.getData()
       .subscribe( data => {
         // console.log(data);
-        this.OrderRestaurants = data;
+        this.orderByName = data;
       });
   }
 
